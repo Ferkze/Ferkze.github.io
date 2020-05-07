@@ -1,6 +1,8 @@
 <template>
     <v-app-bar app color="#121212" dark elevate-on-scroll>
-        <v-toolbar-title>Fabio Martins</v-toolbar-title>
+        <v-toolbar-title>
+            <span>Fabio Martins</span>
+        </v-toolbar-title>
 
         <template v-slot:extension>
             <v-tabs centered background-color="transparent">
