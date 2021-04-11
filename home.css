@@ -95,7 +95,7 @@ body {
   background-color: #fff;
   border-top: 4px solid #333;
   margin-bottom: 20px;
-  border-radius:55px;
+  border-radius: 55px;
 }
 
 /*// Categories //*/
@@ -106,12 +106,12 @@ body {
   height: 320px;
   background: white;
   overflow: hidden;
-  border-top: 20px solid #333;
-  border-radius: 35%;
+  border-radius: 16px;
   margin-bottom: 30px;
 }
 .category-disabled {
   background: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
   height: 300px;
   width: 17%;
 }
@@ -144,8 +144,6 @@ body {
 /*// Curriculo //*/
 .curriculum {
   text-align: center;
-  clear: none;
-  height: 780px;
   overflow: auto;
   margin-bottom: 20px;
 }
@@ -155,29 +153,32 @@ body {
 .obs:hover {
   color: #999;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: 16px repeat(5, minmax(160px, 1fr)) 16px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 1em;
+}
 
 /* skills */
 .skills {
-  float: left;
-  width: 30vw;
-  margin: 10px 0px 0px 10px;
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 3;
+  width: 100%;
   background-color: #fff;
   text-align: left;
-  padding: 20px 32px;
-  border-radius: 50px;
-  border-top: 10px solid #333;
-  border-left: 10px solid #333;
+  border-radius: 16px;
   transition: 2s ease;
 }
-.skills *{
+.skills * {
   margin: 10px;
   list-style-type: none;
 }
+.skills h2 {
+  margin-top: 16px;
+}
 .skills:hover {
-  border-top: 22px solid #111;
-  border-left: 22px solid #111;
-  border-radius: 80px;
-  padding: 30px 40px;
 }
 .skills li:hover .hide {
   font-size: 10px;
@@ -219,14 +220,10 @@ body {
 }
 /*personal*/
 .personal {
-  float: right;
-  width: 50vw;
-  margin: 10px 10px 10px 0;
+  grid-column: 4 / span 3;
+  width: 100%;
   background-color: #fff;
-  padding: 20px 32px;
-  border-radius: 50px;
-  border-top: 10px solid #333;
-  border-right: 10px solid #333;
+  border-radius: 16px;
   text-align: left;
   transition: 2s ease;
 }
@@ -237,75 +234,66 @@ body {
   margin: 20px;
   padding-right: 20px;
 }
+.personal h2 {
+  margin-top: 16px;
+}
 .personal ul {
   list-style-type: circle;
 }
 .personal li {
+  list-style: none;
   margin-top: 6px;
   margin-left: 40px;
 }
 .personal:hover {
-  border-top: 22px solid #111;
-  border-right: 22px solid #111;
-  border-radius: 80px;
-  padding: 30px 40px;
 }
 /*career*/
 .career {
-  float: right;
+  grid-column: 4 / span 3;
+  grid-row: 2 / span 2;
   overflow: auto;
-  width: 50vw;
-  margin: 0 10px 0 0;
+  width: 100%;
   background-color: #fff;
-  padding: 20px 32px;
-  border-radius: 50px;
-  border-top: 10px solid #333;
-  border-right: 10px solid #333;
+  border-radius: 16px;
   transition: 2s ease;
 }
 .career *{
   margin: 10px;
 }
 .career:hover {
-  border-top: 22px solid #111;
-  border-right: 22px solid #111;
-  border-radius: 80px;
-  padding: 30px 40px;
 }
 .level, .level p{
   text-align: left;
 }
 
-/*// Portifolio //*/
+/*// Portfolio //*/
 
 
 /*// CONTACT //*/
 .contact {
-  height: 360px;
+  max-height: 360px;
+}
+.d-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .contact ul {
+  min-width: 250px;
   padding: 10px 24px 10px 24px;
-  margin: 10px 20px 0px 20px;
+  margin: 10px 10px 0px 10px;
   display: inline-block;
   overflow: hidden;
-  width: 22%;
   height: 200px;
   background-color: white;
   text-align: left;
   list-style-type: none;
-  border-radius: 40px;
-  border-top: 12px solid #333;
-  transition: 1s ease;
+  border-radius: 16px;
+  transition: 1s ease-in-out;
 }
 .contact li {
   margin-top: 5px;
-  transition: .5s;
-}
-.contact ul:first-child {
-  border-left: 12px solid #333;
-}
-.contact ul:last-of-type {
-  border-right: 12px solid #333;
+  transition: 1s ease-in;
 }
 .contact ul li:first-child {
   text-align: center;
@@ -313,20 +301,6 @@ body {
 }
 .contact a {
   color: #333;
-}
-.contact ul:hover {
-  margin: 10px 30px 0px 30px;
-  padding: 12px 30px 12px 30px;
-  border-top: 15px solid #000;
-}
-.contact ul:first-child:hover {
-  border-left: 15px solid #000;
-}
-.contact ul:last-of-type:hover {
-  border-right: 15px solid #000;
-}
-.contact ul:hover li{
-  margin-top: 8px;
 }
 
 footer {
@@ -341,3 +315,28 @@ footer {
 
 
 /*// KEYFRAMES //*/
+
+
+
+
+/*// RESPONSIVENESS //*/
+
+@media only screen and (max-width: 767px) {
+
+  .grid-container {
+    grid-template-columns: 16px repeat(1, minmax(160px, 1fr)) 16px;
+    grid-template-rows: 1fr 190px 1fr;
+  }
+  .skills {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .personal {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .career {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
