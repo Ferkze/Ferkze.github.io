@@ -4,8 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>FABIO Ferkze</title>
-    <link rel="stylesheet" type="text/css" href="home.css">
-    <link rel="stylesheet" type="text/css" href="utilities.css">
+    <link rel="stylesheet" type="text/css" href="./home.css">
+    <link rel="stylesheet" type="text/css" href="./lang.css">
+    <link rel="stylesheet" type="text/css" href="./utilities.css">
     <link rel="icon" href="./images/langs/codeIcon1.png">
   </head>
 
@@ -13,58 +14,69 @@
     <nav class="topnav">
       <a href="#titulo" class="bar-title"> <b>FABIO</b> Ferkze </a>
       <div class="items-right">
-        <a href="#curriculo" class="bar-item"> Currículo </a>
-        <a href="#contato" class="bar-item"> Contato </a>
-        <a href="javascript:void(0)" class="bar-item-disabled"> Portfolio </a>
-        <a href="javascript:void(0)" class="bar-item-disabled"> Sobre Mim </a>
+        <a href="#curriculo" class="bar-item"> Curriculum </a>
+        <a href="#contato" class="bar-item"> Contact </a>
+        <div class="bar-item lang-menu">
+          <div class="selected-lang selected-lang-en">
+            English
+          </div>
+          <ul>
+            <li>
+              <a href="#" class="en">English</a>
+            </li>
+            <li>
+              <a href="/pt/" class="br">Português</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="banner"></div>
     <main class="body">
       <section id="categories" class="categories">
-        <h1 id="titulo" class="title"> Engenheiro de Software </h1>
-        <h2 class="subtitle"> Categorias</h2>
+        <h1 id="titulo" class="title"> Software Engineer </h1>
+        <h2 class="subtitle"> Categories</h2>
         <div class="category" id="curriculumBub">
           <img src="./images/starIcon.png" alt="Curriculum">
           <div class="description">
-            <h1><a href="#curriculum"> Currículo </a></h1>
-            <p> Diplomas, escolaridade, experiências, principais habilidades</p>
+            <h1><a href="#curriculum"> Curriculum </a></h1>
+            <p> Diplomas, schilarity, experiences, main developed skills</p>
           </div>
         </div>
         <div class="category" id="contactBub">
           <img src="./images/talkIcon.png" alt="Contact">
           <div class="description">
-            <h1><a href="#contact"> Contato </a></h1>
-            <p>Email e redes sociais</p>
+            <h1><a href="#contact"> Contact </a></h1>
+            <p>Email and social media</p>
           </div>
         </div>
         <div class="category category-disabled" id="portfolioBub">
           <img src="./images/timeIcon.png" alt="Portfolio">
           <div class="description">
             <h1><a href="#portfolio"> Portfolio </a></h1>
-            <p>Em desenvolvimento</p>
+            <p>Under development</p>
           </div>
         </div>
         <div class="category category-disabled" id="aboutmeBub">
           <img src="./images/timeIcon.png" alt="About Me">
           <div class="description">
-            <h1><a href="#aboutme"> Sobre Mim </a></h1>
-            <p>Em desenvolvimento</p>
+            <h1><a href="#aboutme"> About me </a></h1>
+            <p>Under development</p>
           </div>
         </div>
       </section>
       <section class="curriculum">
-        <h1 id="curriculo" class="title">Meu Currículo</h1>
+        <h1 id="curriculo" class="title">Curriculum</h1>
         <div class="grid-container">
           <div class="skills">
-            <h2>Principais Habilidades</h2>
-            <h3>Stacks</h3>
+            <h2>Main skills</h2>
+            <h3>Tech stack</h3>
             <ul>
               <li>
                 <img class="li-icon2" src="./images/langs/java.png">
                 <span>Java</span>
                 <span class="obs">
-                  <img class="li-icon" src="./images/langs/spring.svg">Spring
+                  <img class="li-icon" src="./images/langs/spring.svg">Spring Boot
                 </span>
               </li>
               <li>
@@ -89,7 +101,7 @@
               </li>
             </ul>
             <hr>
-            <h3>Ferramentas</h3>
+            <h3>Tools</h3>
             <ul>
               <li>
                 <img class="li-icon2" src="./images/langs/aws.png">
@@ -109,52 +121,57 @@
               </li>
             </ul>
             <hr>
-            <h3>Idiomas</h3>
+            <h3>Languages</h3>
             <ul>
               <li>
                 <img class="li-icon2" style="margin-right: -3px;" src="./images/flags/usa.png">
-                <span>Inglês</span>
+                <span>English</span>
               </li>
               <li>
                 <img class="li-icon" src="./images/flags/brazil.jpg">
-                <span>Português</span>
+                <span>Portuguese</span>
               </li>
               <li>
                 <img class="li-icon" src="./images/flags/spain.jpg">
-                <span>Espanhol</span>
+                <span>Spanish</span>
               </li>
               <li>
                 <img class="li-icon" src="./images/flags/china.png">
-                <span>Chinês (Mandarim)</span>
+                <span>Chinese (Mandarim)</span>
+                <span class="obs">
+                  HSK3
+                </span>
               </li>
             </ul>
           </div>
           <article class="personal">
             <img src="./images/meIcon.png" alt="Fabio">
-            <h2>Quem sou eu?</h2>
+            <h2>Whoami?</h2>
             <ul>
-              <li>Fabio Gonçalves Martins</li>
-              <li>20 anos</li>
-              <li>Moro em São Paulo, Brasil</li>
-              <li>Desenvolvedor de Software Web e Mobile desde 2017</li>
+              <li>Fabio Goncalves Martins</li>
+              <li>20 years old</li>
+              <li>Currently living in Sao Paulo, Brazil</li>
+              <li>Involved in meaningful software projects since 2017</li>
             </ul>
           </article>
           <article class="career">
-            <h2>Escolaridade</h2>
+            <h2>Scholarity</h2>
             <div class="level">
-              <h3>Superior em Tecnologia em Informática para Negócios</h3>
-              <h4><a href="http://fatecsbc.edu.br">FATEC "Adib Moisés Dib" – São Bernardo do Campo</a></h4>
-              <p> <b>Situação: </b> Graduado em Dezembro de 2020</p>
+              <h3>Associate's degree in IT & Business Management</h3>
+              <h4><a href="http://fatecsbc.edu.br" target="_blank">FATEC "Adib Moisés Dib" – Sao Bernardo do Campo</a>
+              </h4>
+              <p> <b>Situation: </b> Graduated in December of 2020</p>
             </div>
             <hr>
             <div class="level">
-              <h3>Ensino Médio Integrado ao Técnico em Administração</h3>
-              <h4> <a href="http://www.etelg.com.br/">ETEC "Lauro Gomes" – São Bernardo do Campo</a> </h4>
-              <p> <b>Situação: </b> Formado em Dezembro de 2017</p>
+              <h3>High School and Administration Technical School</h3>
+              <h4> <a href="http://www.etelg.com.br/" target="_blank">ETEC "Lauro Gomes" – Sao Bernardo do Campo</a>
+              </h4>
+              <p> <b>Situation: </b> Concluded in December of 2017</p>
             </div>
             <hr>
             <br>
-            <h2>Experiências Profissionais <span class="obs">Coming soon</span></h2>
+            <h2>Professional Experiences <span class="obs">Coming soon</span></h2>
             <br>
           </article>
 
@@ -164,22 +181,23 @@
         <h1 id="portfolio" class="title">Portfolio</h1>
       </section>
       <section>
-        <h1 id="sobremim" class="title">Sobre Mim</h1>
+        <h1 id="sobremim" class="title">About me</h1>
       </section>
       <section class="contact">
-        <h1 id="contato" class="title">Contato</h1>
+        <h1 id="contato" class="title">Contact</h1>
         <div class="d-flex d-flex-center">
           <ul>
             <li>
-              <h2>Contato Principal</h2>
+              <h2>Direct Contact</h2>
             </li>
             <li> <img class="li-icon3" src="./images/media/gmail.jpg"> <b>Email: </b> ferkze@gmail.com </li>
           </ul>
           <ul>
             <li>
-              <h2>Redes Sociais</h2>
+              <h2>Social Media</h2>
             </li>
-            <li> <a href="http://instagram.com/ferkze"> <img class="li-icon3" src="./images/media/insta.jpg">
+            <li> <a href="http://instagram.com/ferkze" target="_blank"> <img class="li-icon3"
+                  src="./images/media/insta.jpg">
                 <b>Instagram: </b> ferkze </a> </li>
             <li> <a href="https://www.linkedin.com/in/ferkze/" target="_blank" rel="noopener noreferrer"><img
                   class="li-icon3" src="./images/media/linkedin.png"> <b>LinkedIn: </b> Fabio Martins</a>
@@ -187,12 +205,13 @@
           </ul>
           <ul>
             <li>
-              <h2>Comunidade</h2>
+              <h2>Community</h2>
             </li>
-            <li> <a href="https://github.com/Ferkze/"> <img src="./images/media/github.png" class="li-icon3"> <b>GitHub
+            <li> <a href="https://github.com/Ferkze/" target="_blank"> <img src="./images/media/github.png"
+                  class="li-icon3"> <b>GitHub
                   Repository: </b> Ferkze </a> </li>
-            <li> <a href="https://stackoverflow.com/users/9870486/ferkze"><img src="./images/media/stackoverflow.jpg"
-                  class="li-icon3"> <b> Stack Overflow: </b> Ferkze </a> </li>
+            <li> <a href="https://stackoverflow.com/users/9870486/ferkze" target="_blank"><img
+                  src="./images/media/stackoverflow.jpg" class="li-icon3"> <b> Stack Overflow: </b> Ferkze </a> </li>
           </ul>
         </div>
       </section>
