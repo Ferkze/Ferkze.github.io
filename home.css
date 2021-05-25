@@ -244,7 +244,7 @@ body {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 16px repeat(5, minmax(160px, 1fr)) 16px;
+  grid-template-columns: minmax(8vw, 12vw) repeat(5, minmax(160px, 1fr)) minmax(8vw, 12vw);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 1em;
@@ -412,6 +412,9 @@ footer {
 /*// UTILS //*/
 .m-0 {
 	margin: 0;
+}
+.mb-0 {
+  margin-bottom: 0;
 }
 
 /*// KEYFRAMES //*/
