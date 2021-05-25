@@ -1,0 +1,22 @@
+{
+  "name": "ferkze.github.io",
+  "version": "1.0.0",
+  "description": "Ferkze's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch stylesheets/index.scss build/stylesheets/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ferkze/Ferkze.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ferkze/Ferkze.github.io/issues"
+  },
+  "homepage": "https://github.com/Ferkze/Ferkze.github.io#readme",
+  "devDependencies": {
+    "sass": "^1.34.0"
+  }
+}
